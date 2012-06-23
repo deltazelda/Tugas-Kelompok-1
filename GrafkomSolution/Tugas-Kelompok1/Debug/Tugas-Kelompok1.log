@@ -1,7 +1,7 @@
-﻿Build started 22/05/2012 8:56:51.
+﻿Build started 07/06/2012 20:21:56.
      1>Project "D:\Kuliah\Semester 8\Grafika Komputer\Tugas\Tugas-Kelompok-1\GrafkomSolution\Tugas-Kelompok1\Tugas-Kelompok1.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\Tugas-Kelompok1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Tugas-Kelompok1.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
          c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Tugas-Kelompok1.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Tugas-Kelompok1.cpp"
@@ -25,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.60
+Time Elapsed 00:00:01.79

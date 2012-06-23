@@ -17,7 +17,7 @@
 
 static float ypoz = 0, zpoz = 0, xpoz = 0,a = 0, b = 0,c = -10;
 
-void coba(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int z1,float z2,float z3)
+void dinding(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int z1,float z2,float z3)
 {
 	glColor3f(1,0,0); //sisi depan
 	glVertex3d(x1,y1,z2);
@@ -50,7 +50,7 @@ void coba(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,int z1,float z
 	glVertex3d(x4,y4,z1);
 	glVertex3d(x3,y3,z1);
 }
-void cobain(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,float z1,float z2,float z3)
+void atapsamping(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,float z1,float z2,float z3)
 { //atap
 	glColor3f(1,1,1);//kanan
 	glVertex3d(x3,y3,z1);
@@ -61,7 +61,7 @@ void cobain(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,float z1,flo
 	glVertex3d(x4,y4,z1);
 	glVertex3d(x4,y1,z3);
 }
-void cobaini(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,float z1,float z2,float z3)
+void atapdepan(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4,float z1,float z2,float z3)
 {//atap
 	glColor3f(1,0,1);//belakang
 	glVertex3d(x4,y4,z1);
@@ -97,12 +97,12 @@ void display(void)
 
 	glBegin(GL_QUADS);
 	//Rumah
-	coba(-8,-2,8,-2,8,2,-8,2,-5,3,0);//rumah
-	coba(2,-2,8,-2,8,2,2,2,-5,4,0);//kamar
-	coba(-8,-2,-7,-2,-7,2,-8,2,-5,4,0);//dindingpagar kiri
-	coba(-8,-2,-7,-2,-7,0,-8,0,-5,5.5,0);
-	coba(7,-2,8,-2,8,0,7,0,-5,5.5,0);
-	cobaini(-3,5,0,0,8,2,-8,2,-5.5,4.5,0);
+	dinding(-8,-2,8,-2,8,2,-8,2,-5,3,0);//rumah
+	dinding(2,-2,8,-2,8,2,2,2,-5,4,0);//kamar
+	dinding(-8,-2,-7,-2,-7,2,-8,2,-5,4,0);//dindingpagar kiri
+	dinding(-8,-2,-7,-2,-7,0,-8,0,-5,5.5,0);
+	dinding(7,-2,8,-2,8,0,7,0,-5,5.5,0);
+	atapdepan(-3,5,0,0,8,2,-8,2,-5.5,4.5,0);
 
 	glColor3f(1,1,1);//plafon depan
 	glVertex3d(8,1.8,-3);
@@ -134,7 +134,7 @@ void display(void)
 
 
 	glBegin(GL_TRIANGLES);
-	cobain(-3,5,0,0,8,2,-8,2,-5.5,4.5,0);
+	atapsamping(-3,5,0,0,8,2,-8,2,-5.5,4.5,0);
 	glEnd();
 
 	glBegin(GL_LINES);
